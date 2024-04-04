@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.6843687374749499" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aka.salako.crossword.CrosswordController">
+
+    <items>
+        <HBox fx:id="board_container" prefHeight="685.0" prefWidth="394.0" />
+        <ScrollPane prefHeight="685.0" prefWidth="355.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="599.0" prefWidth="281.0">
+                    <children>
+                        <ListView fx:id="list_HorInd" layoutX="26.0" layoutY="55.0" prefHeight="278.0" prefWidth="238.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" />
+                        <ListView fx:id="list_VertInd" layoutX="26.0" layoutY="381.0" prefHeight="278.0" prefWidth="242.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="26.0" />
+                        <Label layoutX="444.0" layoutY="24.0" text="Indices Horizontaux" AnchorPane.leftAnchor="26.0">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="444.0" layoutY="354.0" text="Indices Verticaux" AnchorPane.leftAnchor="26.0">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </items>
+</SplitPane>

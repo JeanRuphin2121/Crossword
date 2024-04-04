@@ -1,0 +1,17 @@
+/* style.css */
+
+.crossword-square {
+    -fx-background-color: WHITE;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+}
+
+.crossword-square.black {
+    -fx-background-color: BLACK;
+}
+
+.crossword-square:focused {
+    -fx-background-color: WHITE;
+    -fx-border-color: blue;
+    -fx-border-width: 4px;
+}
